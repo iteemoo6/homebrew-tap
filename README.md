@@ -1,18 +1,27 @@
-# Iteemoo6 Tap
+# iteemoo6 Homebrew Tap
 
-## How do I install these formulae?
+Homebrew Formula repository for projects published by `iteemoo6`.
 
-`brew install iteemoo6/tap/<formula>`
+## Hops
 
-Or `brew tap iteemoo6/tap` and then `brew install <formula>`.
+Hops is a read-only network diagnostics CLI for macOS Apple Silicon.
 
-Or, in a `brew bundle` `Brewfile`:
-
-```ruby
-tap "iteemoo6/tap"
-brew "<formula>"
+```bash
+brew install iteemoo6/tap/hops
 ```
 
-## Documentation
+Upgrade or uninstall:
 
-`brew help`, `man brew` or check [Homebrew's documentation](https://docs.brew.sh).
+```bash
+brew upgrade hops
+brew uninstall hops
+```
+
+Requirements:
+
+- macOS;
+- Apple Silicon (`arm64`).
+
+The Formula downloads the versioned arm64 binary from the Hops GitHub Release and verifies its SHA-256 checksum before installation.
+
+Project repository: <https://github.com/iteemoo6/Hops>
